@@ -5,8 +5,32 @@
 ## Instructions
 
 1. Please download, and install all the requirements of [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) 
-2. Download folder named fusion into the root directory of OpenPCDet   
+2. Download folder named **"fusion"** into the root directory of OpenPCDet
+3. Structure should be the following
+```
+    |
+    |
+    |-- data/
+    |
+    |-- docker/
+    |
+    |-- docs/
+    |
+    |-- pcdet/
+    |
+    |-- fusion/
+    |
+    |-- tools/
+    |
+    |-- LICENCE
+    |
+    |-- README.md
+    |
+    |-- requirements.txt
+    |
+    |-- setup.py
 
+```
 
 ## Limitations
 
