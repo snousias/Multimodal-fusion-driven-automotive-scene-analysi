@@ -17,7 +17,7 @@ output
 version.py
 _suite2/
 .github/
-
+setup.py
 # exception to the rule
 data/*
 !data/.gitkeep
