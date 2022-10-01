@@ -19,8 +19,8 @@ _suite2/
 .github/
 
 # exception to the rule
-data/
+data/*
 !data/.gitkeep
 # exception to the rule
-tools/
+tools/*
 !tools/.gitkeep
