@@ -1,8 +1,76 @@
 # Multimodal fusion driven scene understanding
-> OpenPCDet plugin for fusion of 2D and 3D object detection
+> This repository provides a plugin for the OpenPCDet object detection framework that facilitates 
+> fusion of 2D and 3D object detection.
+
+## Instructions
+
+1. Please download, and install all the requirements of [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) 
+2. Download folder named fusion into the root directory of OpenPCDet   
+
+
+## Limitations
+
+1. Non reported
+2. Successfully tested with commit [b345b08c5d3e49ff82a5374d033ddd2b5e66253e](https://github.com/open-mmlab/OpenPCDet/commit/b345b08c5d3e49ff82a5374d033ddd2b5e66253e) [2022-09-25]
+
+
+## Requirements
+
+
 
 ## Usage
-> Soon to be defined
+Configuration file:
+> fusion/cfgs_custom/multimodal/config.json
+
+```
+{
+  "multimodalv2": {
+    "root": "/home/<HOME_DIR>/Workspace/Automotive/OpenPCDet/",
+    "path_to_data": "data/kitti/training/",
+    "path_to_calibration_for_tracking": "calib.txt",
+    "path_to_groundtruth_for_tracking": "groundtruth.txt",
+    "path_to_image": "image_2/",
+    "path_to_image_right": "image_3/",
+    "path_to_lidar": "velodyne/",
+    "path_to_labels": "label_2/",
+    "deeplab_root": "",
+    "save_path_root": "fusion/results/dump/",
+    "save_path_came": "fusion/results/dump/image/",
+    "save_path_image_from_lidar": "fusion/results/dump/image_lidar/",
+    "save_path_meta_data": "fusion/results/dump/meta_data/",
+    "save_path_lidar": "fusion/results/dump/lidar/",
+    "cut_off_percentage": 0.8,
+    "cut_off_2D": 0.8,
+    "nms_fusion_threshold": 0.5,
+    "segmentation_model": "",
+    "image_detection_model": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
+    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pv_rcnn.yaml",
+    "lidar_detection_model": "fusion/trained/pv_rcnn_8369.pth",
+    "start_frame": 0,
+    "denoise": 0,
+    "meta_data": 0
+  },
+  "comment": {
+
+  }
+}
+```
+
+Run fusion:
+> cd fusion
+> 
+> python runFusion.py
+
+Evaluate fusion outcomes, compare with image-only and LIDAR-only detection:
+> cd fusion
+> 
+> python runEvaluate.py
+
+## Results
+
+
+
+ 
 <!--
 ## Table of Contents
 * [General Info](#general-information)
