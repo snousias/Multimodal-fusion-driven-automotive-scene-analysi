@@ -16,5 +16,11 @@ venv/
 output
 version.py
 _suite2/
-tools/
 .github/
+
+# exception to the rule
+data/
+!data/.gitkeep
+# exception to the rule
+tools/
+!tools/.gitkeep
