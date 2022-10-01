@@ -1,7 +1,8 @@
 # Multimodal fusion driven scene understanding
 > OpenPCDet plugin for fusion of 2D and 3D object detection
 
-
+## Usage
+> Soon to be defined
 <!--
 ## Table of Contents
 * [General Info](#general-information)
