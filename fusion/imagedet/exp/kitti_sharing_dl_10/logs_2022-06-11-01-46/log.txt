@@ -1,0 +1,6 @@
+2022-06-11-01-49: epoch 1:  train | loss 0.781 | class_loss 0.094 | score_loss 0.236 | bbox_loss 0.451 | epoch_time 2.55min 
+2022-06-11-01-51: epoch 2:  train | loss 0.725 | class_loss 0.075 | score_loss 0.230 | bbox_loss 0.420 | epoch_time 2.64min 
+2022-06-11-01-54: epoch 3:  train | loss 0.684 | class_loss 0.064 | score_loss 0.226 | bbox_loss 0.394 | epoch_time 2.55min 
+2022-06-11-01-57: epoch 4:  train | loss 0.638 | class_loss 0.055 | score_loss 0.214 | bbox_loss 0.369 | epoch_time 2.50min 
+2022-06-11-01-59: epoch 5:  train | loss 0.617 | class_loss 0.051 | score_loss 0.212 | bbox_loss 0.354 | epoch_time 2.53min 
+2022-06-11-01-59: epoch 5:  val   | loss 0.779 | class_loss 0.169 | score_loss 0.196 | bbox_loss 0.414 | epoch_time 0.04min 

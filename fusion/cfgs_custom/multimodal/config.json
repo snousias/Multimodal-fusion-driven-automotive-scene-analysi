@@ -1,0 +1,32 @@
+{
+  "multimodalv2": {
+    "root": "/home/stavros/Workspace/Automotive/OpenPCDet/",
+    "path_to_data": "data/kitti/training/",
+    "path_to_calibration_for_tracking": "calib.txt",
+    "path_to_groundtruth_for_tracking": "groundtruth.txt",
+    "path_to_image": "image_2/",
+    "path_to_image_right": "image_3/",
+    "path_to_lidar": "velodyne/",
+    "path_to_labels": "label_2/",
+    "deeplab_root": "",
+    "save_path_root": "fusion/results/dump/",
+    "save_path_came": "fusion/results/dump/image/",
+    "save_path_image_from_lidar": "fusion/results/dump/image_lidar/",
+    "save_path_meta_data": "fusion/results/dump/meta_data/",
+    "save_path_lidar": "fusion/results/dump/lidar/",
+    "cut_off_percentage": 0.8,
+    "cut_off_2D": 0.8,
+    "nms_fusion_threshold": 0.5,
+    "segmentation_model": "",
+    "image_detection_model": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
+    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pv_rcnn.yaml",
+    "lidar_detection_model": "fusion/trained/pv_rcnn_8369.pth",
+    "start_frame": 0,
+    "denoise": 0,
+    "meta_data": 0
+  },
+  "comment": {
+
+  }
+}
+

@@ -1,0 +1,140 @@
+2022-06-11-02-33: epoch 1:  train | loss 0.795 | class_loss 0.095 | score_loss 0.242 | bbox_loss 0.458 | epoch_time 2.39min 
+2022-06-11-02-36: epoch 2:  train | loss 0.731 | class_loss 0.076 | score_loss 0.232 | bbox_loss 0.422 | epoch_time 2.47min 
+2022-06-11-02-38: epoch 3:  train | loss 0.692 | class_loss 0.062 | score_loss 0.228 | bbox_loss 0.402 | epoch_time 2.51min 
+2022-06-11-02-41: epoch 4:  train | loss 0.658 | class_loss 0.057 | score_loss 0.219 | bbox_loss 0.382 | epoch_time 2.50min 
+2022-06-11-02-43: epoch 5:  train | loss 0.630 | class_loss 0.051 | score_loss 0.217 | bbox_loss 0.361 | epoch_time 2.48min 
+2022-06-11-02-43: epoch 5:  val   | loss 0.699 | class_loss 0.117 | score_loss 0.169 | bbox_loss 0.413 | epoch_time 0.04min 
+2022-06-11-02-43: epoch 5:  val   | Car_easy 0.290 | Car_moderate 0.524 | Car_hard 0.506 | Pedestrian_easy 0.183 | Pedestrian_moderate 0.183 | Pedestrian_hard 0.183 | Cyclist_easy 0.000 | Cyclist_moderate 0.000 | Cyclist_hard 0.000 | mAP 0.208 
+2022-06-11-02-46: epoch 6:  train | loss 0.611 | class_loss 0.046 | score_loss 0.209 | bbox_loss 0.356 | epoch_time 2.54min 
+2022-06-11-02-48: epoch 7:  train | loss 0.614 | class_loss 0.049 | score_loss 0.212 | bbox_loss 0.352 | epoch_time 2.50min 
+2022-06-11-02-51: epoch 8:  train | loss 0.575 | class_loss 0.041 | score_loss 0.203 | bbox_loss 0.332 | epoch_time 2.48min 
+2022-06-11-02-53: epoch 9:  train | loss 0.567 | class_loss 0.038 | score_loss 0.204 | bbox_loss 0.325 | epoch_time 2.48min 
+2022-06-11-02-56: epoch 10: train | loss 0.540 | class_loss 0.037 | score_loss 0.194 | bbox_loss 0.309 | epoch_time 2.46min 
+2022-06-11-02-56: epoch 10: val   | loss 0.559 | class_loss 0.046 | score_loss 0.217 | bbox_loss 0.295 | epoch_time 0.02min 
+2022-06-11-02-56: epoch 10: val   | Car_easy 0.320 | Car_moderate 0.577 | Car_hard 0.518 | Pedestrian_easy 0.169 | Pedestrian_moderate 0.169 | Pedestrian_hard 0.169 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.244 
+2022-06-11-02-59: epoch 1:  train | loss 0.591 | class_loss 0.045 | score_loss 0.209 | bbox_loss 0.337 | epoch_time 2.47min 
+2022-06-11-03-01: epoch 2:  train | loss 0.553 | class_loss 0.038 | score_loss 0.197 | bbox_loss 0.318 | epoch_time 2.46min 
+2022-06-11-03-04: epoch 3:  train | loss 0.541 | class_loss 0.037 | score_loss 0.192 | bbox_loss 0.312 | epoch_time 2.57min 
+2022-06-11-03-06: epoch 4:  train | loss 0.536 | class_loss 0.037 | score_loss 0.190 | bbox_loss 0.308 | epoch_time 2.47min 
+2022-06-11-03-09: epoch 5:  train | loss 0.525 | class_loss 0.032 | score_loss 0.190 | bbox_loss 0.303 | epoch_time 2.53min 
+2022-06-11-03-09: epoch 5:  val   | loss 0.571 | class_loss 0.043 | score_loss 0.190 | bbox_loss 0.338 | epoch_time 0.02min 
+2022-06-11-03-09: epoch 5:  val   | Car_easy 0.255 | Car_moderate 0.530 | Car_hard 0.448 | Pedestrian_easy 0.125 | Pedestrian_moderate 0.161 | Pedestrian_hard 0.161 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.217 
+2022-06-11-03-11: epoch 6:  train | loss 0.509 | class_loss 0.030 | score_loss 0.189 | bbox_loss 0.291 | epoch_time 2.50min 
+2022-06-11-03-14: epoch 7:  train | loss 0.499 | class_loss 0.030 | score_loss 0.185 | bbox_loss 0.284 | epoch_time 2.51min 
+2022-06-11-03-16: epoch 8:  train | loss 0.485 | class_loss 0.028 | score_loss 0.181 | bbox_loss 0.276 | epoch_time 2.55min 
+2022-06-11-03-19: epoch 9:  train | loss 0.466 | class_loss 0.025 | score_loss 0.176 | bbox_loss 0.264 | epoch_time 2.51min 
+2022-06-11-03-21: epoch 10: train | loss 0.477 | class_loss 0.025 | score_loss 0.180 | bbox_loss 0.272 | epoch_time 2.51min 
+2022-06-11-03-21: epoch 10: val   | loss 0.561 | class_loss 0.047 | score_loss 0.184 | bbox_loss 0.331 | epoch_time 0.02min 
+2022-06-11-03-21: epoch 10: val   | Car_easy 0.341 | Car_moderate 0.625 | Car_hard 0.551 | Pedestrian_easy 0.156 | Pedestrian_moderate 0.156 | Pedestrian_hard 0.156 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.251 
+2022-06-11-03-24: epoch 1:  train | loss 0.468 | class_loss 0.025 | score_loss 0.178 | bbox_loss 0.265 | epoch_time 2.57min 
+2022-06-11-03-27: epoch 2:  train | loss 0.450 | class_loss 0.024 | score_loss 0.171 | bbox_loss 0.255 | epoch_time 2.49min 
+2022-06-11-03-29: epoch 3:  train | loss 0.442 | class_loss 0.023 | score_loss 0.168 | bbox_loss 0.251 | epoch_time 2.53min 
+2022-06-11-03-32: epoch 4:  train | loss 0.442 | class_loss 0.024 | score_loss 0.169 | bbox_loss 0.249 | epoch_time 2.55min 
+2022-06-11-03-34: epoch 5:  train | loss 0.440 | class_loss 0.022 | score_loss 0.169 | bbox_loss 0.249 | epoch_time 2.49min 
+2022-06-11-03-34: epoch 5:  val   | loss 0.423 | class_loss 0.023 | score_loss 0.155 | bbox_loss 0.245 | epoch_time 0.02min 
+2022-06-11-03-34: epoch 5:  val   | Car_easy 0.421 | Car_moderate 0.780 | Car_hard 0.679 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.182 | Pedestrian_hard 0.182 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.300 
+2022-06-11-03-37: epoch 6:  train | loss 0.429 | class_loss 0.020 | score_loss 0.164 | bbox_loss 0.245 | epoch_time 2.56min 
+2022-06-11-03-39: epoch 7:  train | loss 0.418 | class_loss 0.019 | score_loss 0.163 | bbox_loss 0.236 | epoch_time 2.51min 
+2022-06-11-03-42: epoch 8:  train | loss 0.415 | class_loss 0.018 | score_loss 0.163 | bbox_loss 0.234 | epoch_time 2.51min 
+2022-06-11-03-44: epoch 9:  train | loss 0.407 | class_loss 0.019 | score_loss 0.160 | bbox_loss 0.228 | epoch_time 2.52min 
+2022-06-11-03-47: epoch 10: train | loss 0.397 | class_loss 0.019 | score_loss 0.155 | bbox_loss 0.224 | epoch_time 2.51min 
+2022-06-11-03-47: epoch 10: val   | loss 0.491 | class_loss 0.068 | score_loss 0.150 | bbox_loss 0.273 | epoch_time 0.02min 
+2022-06-11-03-47: epoch 10: val   | Car_easy 0.514 | Car_moderate 0.791 | Car_hard 0.703 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.236 | Pedestrian_hard 0.236 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.326 
+2022-06-11-03-50: epoch 1:  train | loss 0.413 | class_loss 0.020 | score_loss 0.160 | bbox_loss 0.233 | epoch_time 2.50min 
+2022-06-11-03-52: epoch 2:  train | loss 0.407 | class_loss 0.018 | score_loss 0.159 | bbox_loss 0.229 | epoch_time 2.51min 
+2022-06-11-03-55: epoch 3:  train | loss 0.398 | class_loss 0.018 | score_loss 0.157 | bbox_loss 0.223 | epoch_time 2.48min 
+2022-06-11-03-57: epoch 4:  train | loss 0.405 | class_loss 0.020 | score_loss 0.158 | bbox_loss 0.227 | epoch_time 2.57min 
+2022-06-11-04-00: epoch 5:  train | loss 0.396 | class_loss 0.019 | score_loss 0.157 | bbox_loss 0.220 | epoch_time 2.50min 
+2022-06-11-04-00: epoch 5:  val   | loss 0.435 | class_loss 0.022 | score_loss 0.187 | bbox_loss 0.226 | epoch_time 0.02min 
+2022-06-11-04-00: epoch 5:  val   | Car_easy 0.416 | Car_moderate 0.763 | Car_hard 0.674 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.182 | Pedestrian_hard 0.182 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.297 
+2022-06-11-04-03: epoch 6:  train | loss 0.394 | class_loss 0.017 | score_loss 0.155 | bbox_loss 0.222 | epoch_time 2.52min 
+2022-06-11-04-05: epoch 7:  train | loss 0.382 | class_loss 0.016 | score_loss 0.152 | bbox_loss 0.214 | epoch_time 2.48min 
+2022-06-11-04-08: epoch 8:  train | loss 0.385 | class_loss 0.017 | score_loss 0.152 | bbox_loss 0.216 | epoch_time 2.52min 
+2022-06-11-04-10: epoch 9:  train | loss 0.377 | class_loss 0.015 | score_loss 0.151 | bbox_loss 0.211 | epoch_time 2.56min 
+2022-06-11-04-13: epoch 10: train | loss 0.362 | class_loss 0.014 | score_loss 0.146 | bbox_loss 0.202 | epoch_time 2.48min 
+2022-06-11-04-13: epoch 10: val   | loss 0.402 | class_loss 0.011 | score_loss 0.171 | bbox_loss 0.220 | epoch_time 0.02min 
+2022-06-11-04-13: epoch 10: val   | Car_easy 0.426 | Car_moderate 0.771 | Car_hard 0.684 | Pedestrian_easy 0.190 | Pedestrian_moderate 0.190 | Pedestrian_hard 0.190 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.302 
+2022-06-11-04-16: epoch 1:  train | loss 0.370 | class_loss 0.016 | score_loss 0.149 | bbox_loss 0.204 | epoch_time 2.49min 
+2022-06-11-04-18: epoch 2:  train | loss 0.362 | class_loss 0.015 | score_loss 0.145 | bbox_loss 0.202 | epoch_time 2.53min 
+2022-06-11-04-21: epoch 3:  train | loss 0.359 | class_loss 0.015 | score_loss 0.144 | bbox_loss 0.200 | epoch_time 2.50min 
+2022-06-11-04-23: epoch 4:  train | loss 0.360 | class_loss 0.014 | score_loss 0.144 | bbox_loss 0.203 | epoch_time 2.54min 
+2022-06-11-04-26: epoch 5:  train | loss 0.355 | class_loss 0.014 | score_loss 0.143 | bbox_loss 0.199 | epoch_time 2.51min 
+2022-06-11-04-26: epoch 5:  val   | loss 0.415 | class_loss 0.015 | score_loss 0.176 | bbox_loss 0.224 | epoch_time 0.02min 
+2022-06-11-04-26: epoch 5:  val   | Car_easy 0.395 | Car_moderate 0.765 | Car_hard 0.669 | Pedestrian_easy 0.169 | Pedestrian_moderate 0.169 | Pedestrian_hard 0.169 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.290 
+2022-06-11-04-28: epoch 6:  train | loss 0.349 | class_loss 0.014 | score_loss 0.142 | bbox_loss 0.192 | epoch_time 2.47min 
+2022-06-11-04-31: epoch 7:  train | loss 0.352 | class_loss 0.015 | score_loss 0.143 | bbox_loss 0.194 | epoch_time 2.54min 
+2022-06-11-04-34: epoch 8:  train | loss 0.342 | class_loss 0.014 | score_loss 0.137 | bbox_loss 0.191 | epoch_time 2.47min 
+2022-06-11-04-36: epoch 9:  train | loss 0.336 | class_loss 0.013 | score_loss 0.139 | bbox_loss 0.184 | epoch_time 2.56min 
+2022-06-11-04-39: epoch 10: train | loss 0.335 | class_loss 0.012 | score_loss 0.136 | bbox_loss 0.187 | epoch_time 2.56min 
+2022-06-11-04-39: epoch 10: val   | loss 0.413 | class_loss 0.019 | score_loss 0.132 | bbox_loss 0.263 | epoch_time 0.02min 
+2022-06-11-04-39: epoch 10: val   | Car_easy 0.506 | Car_moderate 0.894 | Car_hard 0.863 | Pedestrian_easy 0.167 | Pedestrian_moderate 0.167 | Pedestrian_hard 0.167 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.337 
+2022-06-11-04-42: epoch 1:  train | loss 0.342 | class_loss 0.014 | score_loss 0.141 | bbox_loss 0.187 | epoch_time 2.47min 
+2022-06-11-04-44: epoch 2:  train | loss 0.341 | class_loss 0.012 | score_loss 0.140 | bbox_loss 0.189 | epoch_time 2.53min 
+2022-06-11-04-47: epoch 3:  train | loss 0.328 | class_loss 0.012 | score_loss 0.136 | bbox_loss 0.180 | epoch_time 2.50min 
+2022-06-11-04-49: epoch 4:  train | loss 0.333 | class_loss 0.012 | score_loss 0.137 | bbox_loss 0.184 | epoch_time 2.52min 
+2022-06-11-04-52: epoch 5:  train | loss 0.326 | class_loss 0.012 | score_loss 0.136 | bbox_loss 0.179 | epoch_time 2.49min 
+2022-06-11-04-52: epoch 5:  val   | loss 0.407 | class_loss 0.014 | score_loss 0.170 | bbox_loss 0.223 | epoch_time 0.02min 
+2022-06-11-04-52: epoch 5:  val   | Car_easy 0.496 | Car_moderate 0.868 | Car_hard 0.843 | Pedestrian_easy 0.156 | Pedestrian_moderate 0.156 | Pedestrian_hard 0.156 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.327 
+2022-06-11-04-54: epoch 6:  train | loss 0.320 | class_loss 0.011 | score_loss 0.133 | bbox_loss 0.176 | epoch_time 2.49min 
+2022-06-11-04-57: epoch 7:  train | loss 0.318 | class_loss 0.011 | score_loss 0.131 | bbox_loss 0.175 | epoch_time 2.52min 
+2022-06-11-05-00: epoch 8:  train | loss 0.318 | class_loss 0.012 | score_loss 0.133 | bbox_loss 0.173 | epoch_time 2.47min 
+2022-06-11-05-02: epoch 9:  train | loss 0.318 | class_loss 0.011 | score_loss 0.132 | bbox_loss 0.175 | epoch_time 2.50min 
+2022-06-11-05-05: epoch 10: train | loss 0.317 | class_loss 0.011 | score_loss 0.133 | bbox_loss 0.173 | epoch_time 2.53min 
+2022-06-11-05-05: epoch 10: val   | loss 0.370 | class_loss 0.017 | score_loss 0.149 | bbox_loss 0.205 | epoch_time 0.02min 
+2022-06-11-05-05: epoch 10: val   | Car_easy 0.515 | Car_moderate 0.889 | Car_hard 0.881 | Pedestrian_easy 0.225 | Pedestrian_moderate 0.227 | Pedestrian_hard 0.227 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.360 
+2022-06-11-05-08: epoch 1:  train | loss 0.311 | class_loss 0.011 | score_loss 0.129 | bbox_loss 0.172 | epoch_time 2.46min 
+2022-06-11-05-11: epoch 2:  train | loss 0.313 | class_loss 0.011 | score_loss 0.129 | bbox_loss 0.172 | epoch_time 2.51min 
+2022-06-11-05-13: epoch 3:  train | loss 0.313 | class_loss 0.011 | score_loss 0.131 | bbox_loss 0.172 | epoch_time 2.46min 
+2022-06-11-05-16: epoch 4:  train | loss 0.312 | class_loss 0.012 | score_loss 0.130 | bbox_loss 0.170 | epoch_time 2.46min 
+2022-06-11-05-18: epoch 5:  train | loss 0.303 | class_loss 0.010 | score_loss 0.127 | bbox_loss 0.165 | epoch_time 2.49min 
+2022-06-11-05-18: epoch 5:  val   | loss 0.361 | class_loss 0.012 | score_loss 0.132 | bbox_loss 0.217 | epoch_time 0.02min 
+2022-06-11-05-18: epoch 5:  val   | Car_easy 0.512 | Car_moderate 0.869 | Car_hard 0.786 | Pedestrian_easy 0.264 | Pedestrian_moderate 0.264 | Pedestrian_hard 0.264 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.359 
+2022-06-11-05-21: epoch 6:  train | loss 0.297 | class_loss 0.010 | score_loss 0.125 | bbox_loss 0.162 | epoch_time 2.48min 
+2022-06-11-05-23: epoch 7:  train | loss 0.297 | class_loss 0.010 | score_loss 0.124 | bbox_loss 0.162 | epoch_time 2.51min 
+2022-06-11-05-26: epoch 8:  train | loss 0.300 | class_loss 0.010 | score_loss 0.126 | bbox_loss 0.164 | epoch_time 2.51min 
+2022-06-11-05-29: epoch 9:  train | loss 0.302 | class_loss 0.010 | score_loss 0.127 | bbox_loss 0.165 | epoch_time 2.49min 
+2022-06-11-05-31: epoch 10: train | loss 0.289 | class_loss 0.009 | score_loss 0.124 | bbox_loss 0.157 | epoch_time 2.49min 
+2022-06-11-05-31: epoch 10: val   | loss 0.420 | class_loss 0.013 | score_loss 0.168 | bbox_loss 0.239 | epoch_time 0.02min 
+2022-06-11-05-31: epoch 10: val   | Car_easy 0.520 | Car_moderate 0.895 | Car_hard 0.871 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.182 | Pedestrian_hard 0.182 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.345 
+2022-06-11-05-35: epoch 1:  train | loss 0.291 | class_loss 0.009 | score_loss 0.124 | bbox_loss 0.158 | epoch_time 2.45min 
+2022-06-11-05-37: epoch 2:  train | loss 0.289 | class_loss 0.009 | score_loss 0.123 | bbox_loss 0.157 | epoch_time 2.49min 
+2022-06-11-05-40: epoch 3:  train | loss 0.285 | class_loss 0.009 | score_loss 0.122 | bbox_loss 0.153 | epoch_time 2.58min 
+2022-06-11-05-42: epoch 4:  train | loss 0.282 | class_loss 0.009 | score_loss 0.121 | bbox_loss 0.152 | epoch_time 2.46min 
+2022-06-11-05-45: epoch 5:  train | loss 0.283 | class_loss 0.009 | score_loss 0.122 | bbox_loss 0.153 | epoch_time 2.56min 
+2022-06-11-05-45: epoch 5:  val   | loss 0.422 | class_loss 0.015 | score_loss 0.160 | bbox_loss 0.247 | epoch_time 0.02min 
+2022-06-11-05-45: epoch 5:  val   | Car_easy 0.523 | Car_moderate 0.897 | Car_hard 0.871 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.182 | Pedestrian_hard 0.182 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.345 
+2022-06-11-05-48: epoch 6:  train | loss 0.289 | class_loss 0.010 | score_loss 0.124 | bbox_loss 0.156 | epoch_time 2.53min 
+2022-06-11-05-50: epoch 7:  train | loss 0.288 | class_loss 0.009 | score_loss 0.124 | bbox_loss 0.156 | epoch_time 2.61min 
+2022-06-11-05-53: epoch 8:  train | loss 0.283 | class_loss 0.009 | score_loss 0.120 | bbox_loss 0.154 | epoch_time 2.52min 
+2022-06-11-05-55: epoch 9:  train | loss 0.282 | class_loss 0.009 | score_loss 0.121 | bbox_loss 0.151 | epoch_time 2.53min 
+2022-06-11-05-58: epoch 10: train | loss 0.281 | class_loss 0.009 | score_loss 0.120 | bbox_loss 0.151 | epoch_time 2.44min 
+2022-06-11-05-58: epoch 10: val   | loss 0.367 | class_loss 0.021 | score_loss 0.136 | bbox_loss 0.211 | epoch_time 0.02min 
+2022-06-11-05-58: epoch 10: val   | Car_easy 0.500 | Car_moderate 0.857 | Car_hard 0.854 | Pedestrian_easy 0.223 | Pedestrian_moderate 0.223 | Pedestrian_hard 0.223 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.350 
+2022-06-11-06-04: epoch 1:  train | loss 0.276 | class_loss 0.008 | score_loss 0.119 | bbox_loss 0.148 | epoch_time 2.41min 
+2022-06-11-06-07: epoch 2:  train | loss 0.279 | class_loss 0.010 | score_loss 0.120 | bbox_loss 0.150 | epoch_time 2.49min 
+2022-06-11-06-09: epoch 3:  train | loss 0.273 | class_loss 0.009 | score_loss 0.118 | bbox_loss 0.145 | epoch_time 2.47min 
+2022-06-11-06-12: epoch 4:  train | loss 0.276 | class_loss 0.010 | score_loss 0.119 | bbox_loss 0.148 | epoch_time 2.48min 
+2022-06-11-06-14: epoch 5:  train | loss 0.267 | class_loss 0.009 | score_loss 0.116 | bbox_loss 0.142 | epoch_time 2.49min 
+2022-06-11-06-14: epoch 5:  val   | loss 0.359 | class_loss 0.024 | score_loss 0.142 | bbox_loss 0.192 | epoch_time 0.02min 
+2022-06-11-06-14: epoch 5:  val   | Car_easy 0.516 | Car_moderate 0.887 | Car_hard 0.880 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.182 | Pedestrian_hard 0.182 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.344 
+2022-06-11-06-17: epoch 6:  train | loss 0.273 | class_loss 0.009 | score_loss 0.116 | bbox_loss 0.147 | epoch_time 2.51min 
+2022-06-11-06-19: epoch 7:  train | loss 0.274 | class_loss 0.009 | score_loss 0.118 | bbox_loss 0.147 | epoch_time 2.44min 
+2022-06-11-06-22: epoch 8:  train | loss 0.266 | class_loss 0.009 | score_loss 0.115 | bbox_loss 0.142 | epoch_time 2.45min 
+2022-06-11-06-24: epoch 9:  train | loss 0.272 | class_loss 0.009 | score_loss 0.118 | bbox_loss 0.145 | epoch_time 2.50min 
+2022-06-11-06-27: epoch 10: train | loss 0.271 | class_loss 0.009 | score_loss 0.116 | bbox_loss 0.147 | epoch_time 2.50min 
+2022-06-11-06-27: epoch 10: val   | loss 0.364 | class_loss 0.014 | score_loss 0.136 | bbox_loss 0.214 | epoch_time 0.02min 
+2022-06-11-06-27: epoch 10: val   | Car_easy 0.506 | Car_moderate 0.882 | Car_hard 0.873 | Pedestrian_easy 0.256 | Pedestrian_moderate 0.256 | Pedestrian_hard 0.256 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.367 
+2022-06-11-06-33: epoch 1:  train | loss 0.253 | class_loss 0.008 | score_loss 0.112 | bbox_loss 0.133 | epoch_time 2.42min 
+2022-06-11-06-36: epoch 2:  train | loss 0.255 | class_loss 0.008 | score_loss 0.113 | bbox_loss 0.134 | epoch_time 2.48min 
+2022-06-11-06-38: epoch 3:  train | loss 0.254 | class_loss 0.008 | score_loss 0.113 | bbox_loss 0.133 | epoch_time 2.49min 
+2022-06-11-06-41: epoch 4:  train | loss 0.254 | class_loss 0.008 | score_loss 0.113 | bbox_loss 0.133 | epoch_time 2.50min 
+2022-06-11-06-43: epoch 5:  train | loss 0.257 | class_loss 0.009 | score_loss 0.113 | bbox_loss 0.135 | epoch_time 2.49min 
+2022-06-11-06-43: epoch 5:  val   | loss 0.407 | class_loss 0.014 | score_loss 0.172 | bbox_loss 0.221 | epoch_time 0.02min 
+2022-06-11-06-43: epoch 5:  val   | Car_easy 0.515 | Car_moderate 0.892 | Car_hard 0.884 | Pedestrian_easy 0.182 | Pedestrian_moderate 0.236 | Pedestrian_hard 0.236 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.358 
+2022-06-11-06-46: epoch 6:  train | loss 0.250 | class_loss 0.008 | score_loss 0.112 | bbox_loss 0.130 | epoch_time 2.45min 
+2022-06-11-06-48: epoch 7:  train | loss 0.246 | class_loss 0.007 | score_loss 0.111 | bbox_loss 0.127 | epoch_time 2.46min 
+2022-06-11-06-51: epoch 8:  train | loss 0.248 | class_loss 0.008 | score_loss 0.111 | bbox_loss 0.129 | epoch_time 2.49min 
+2022-06-11-06-53: epoch 9:  train | loss 0.247 | class_loss 0.008 | score_loss 0.110 | bbox_loss 0.128 | epoch_time 2.52min 
+2022-06-11-06-56: epoch 10: train | loss 0.249 | class_loss 0.008 | score_loss 0.112 | bbox_loss 0.129 | epoch_time 2.50min 
+2022-06-11-06-56: epoch 10: val   | loss 0.405 | class_loss 0.019 | score_loss 0.154 | bbox_loss 0.231 | epoch_time 0.02min 
+2022-06-11-06-56: epoch 10: val   | Car_easy 0.534 | Car_moderate 0.896 | Car_hard 0.810 | Pedestrian_easy 0.256 | Pedestrian_moderate 0.256 | Pedestrian_hard 0.256 | Cyclist_easy 0.091 | Cyclist_moderate 0.091 | Cyclist_hard 0.091 | mAP 0.365 

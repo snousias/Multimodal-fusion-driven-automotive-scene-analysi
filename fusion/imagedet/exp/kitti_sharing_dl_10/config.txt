@@ -1,0 +1,60 @@
+torch version: 1.8.1+cu111
+cudnn version: 8005
+cmd: ['/home/stavros/Workspace/SqueezeDet-PyTorch/src/main.py', '--mode', 'sharing', '--exp_id', 'kitti_sharing', '--num_epochs', '10', '--dataset', 'kitti', '--load_model', '/home/stavros/Workspace/SqueezeDet-PyTorch/models/squeezedet_kitti_epoch280.pth']
+
+config:
+anchors: [[   8.    8.   34.   30.]
+ [   8.    8.   75.   45.]
+ [   8.    8.   38.   90.]
+ ...
+ [1240.  376.  194.  178.]
+ [1240.  376.  283.  156.]
+ [1240.  376.  381.  185.]]
+anchors_per_grid: 9
+arch: squeezedet
+batch_size: 6
+bbox_loss_weight: 6.0
+chunk_sizes: [6]
+class_loss_weight: 1.0
+class_names: ('Car', 'Pedestrian', 'Cyclist')
+data_dir: /home/stavros/Desktop/OpenPCDet/data
+dataset: kitti
+debug: 0
+debug_dir: /home/stavros/Workspace/SqueezeDet-PyTorch/exp/kitti_sharing/debug
+device: cuda
+drift_prob: 0.2
+dropout_prob: 0.5
+exp_dir: /home/stavros/Workspace/SqueezeDet-PyTorch/exp
+exp_id: kitti_sharing
+flip_prob: 0.5
+forbid_resize: False
+gpus: [0]
+gpus_str: 0
+grad_norm: 5.0
+input_size: (384, 1248)
+keep_top_k: 64
+load_model: /home/stavros/Workspace/SqueezeDet-PyTorch/models/squeezedet_kitti_epoch280.pth
+lr: 0.01
+master_batch_size: 6
+mode: sharing
+momentum: 0.9
+negative_score_loss_weight: 100.0
+nms_thresh: 0.4
+no_eval: False
+not_cuda_benchmark: False
+num_anchors: 16848
+num_classes: 3
+num_epochs: 10
+num_iters: -1
+num_workers: 4
+positive_score_loss_weight: 3.75
+print_interval: 10
+rgb_mean: [[[93.877 98.801 95.923]]]
+rgb_std: [[[78.782 80.13  81.2  ]]]
+root_dir: /home/stavros/Workspace/SqueezeDet-PyTorch
+save_dir: /home/stavros/Workspace/SqueezeDet-PyTorch/exp/kitti_sharing
+save_intervals: 1
+score_thresh: 0.3
+seed: 42
+val_intervals: 5
+weight_decay: 0.0001
