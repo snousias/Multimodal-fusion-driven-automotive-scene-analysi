@@ -40,7 +40,8 @@
 
 ## Requirements
 
-
+Extra requirements for cropping pdf report in evalution script:
+> sudo apt-get install texlive-extra-utils  
 
 ## Usage
 Configuration file:
