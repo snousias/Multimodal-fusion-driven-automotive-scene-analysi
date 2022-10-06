@@ -13,23 +13,47 @@ class KITTI(BaseDataset):
         super(KITTI, self).__init__(phase, cfg)
 
         self.input_size = (384, 1248)  # (height, width), both dividable by 16
+        #TODO
+
+
+        # self.class_names = ('Car', 'Pedestrian')
+        # self.rgb_mean = np.array([63.792778,59.681408, 54.792408], dtype=np.float32).reshape(1, 1, 3)
+        # self.rgb_std = np.array([43.899727, 42.48467,  40.198128], dtype=np.float32).reshape(1, 1, 3)
+        # self.data_dir = os.path.join(cfg.data_dir, 'carla')
+        # self.anchors_seed=np.asarray([[ 21,23],[ 57,  38], [107,  38], [103,  95], [170,  70], [231, 148], [275, 238], [445, 238],
+        #     [737, 380]], dtype=np.float32)
+
+
+
         self.class_names = ('Car', 'Pedestrian', 'Cyclist')
         self.rgb_mean = np.array([93.877, 98.801, 95.923], dtype=np.float32).reshape(1, 1, 3)
         self.rgb_std = np.array([78.782, 80.130, 81.200], dtype=np.float32).reshape(1, 1, 3)
+        self.data_dir = os.path.join(cfg.data_dir)
+        self.anchors_seed = np.array([[34, 30], [75, 45], [38, 90],
+          [127, 68], [80, 174], [196, 97],
+          [194, 178], [283, 156], [381, 185]], dtype=np.float32)
 
-        # self.class_names = ('Car', 'Pedestrian')
+
+        # self.class_names = ('Car', 'Pedestrian','Cyclist')
         # self.rgb_mean = np.array([63.792778, 59.681408, 54.792408], dtype=np.float32).reshape(1, 1, 3)
         # self.rgb_std = np.array([43.899727, 42.48467, 40.198128], dtype=np.float32).reshape(1, 1, 3)
+        # self.data_dir = os.path.join(cfg.data_dir)
+        # self.anchors_seed = np.asarray(
+        #     [[21, 23], [57, 38], [107, 38], [103, 95], [170, 70], [231, 148], [275, 238], [445, 238],
+        #      [737, 380]], dtype=np.float32)
+
+
+
+
+
 
         self.num_classes = len(self.class_names)
         self.class_ids_dict = {cls_name: cls_id for cls_id, cls_name in enumerate(self.class_names)}
-        self.data_dir = os.path.join(cfg.data_dir, 'carla')
-        self.sample_ids, self.sample_set_path = self.get_sample_ids()
+
+
+        # self.sample_ids, self.sample_set_path = self.get_sample_ids()
 
         self.grid_size = tuple(x // 16 for x in self.input_size)  # anchors grid
-        self.anchors_seed = np.array([[34, 30], [75, 45], [38, 90],
-                                      [127, 68], [80, 174], [196, 97],
-                                      [194, 178], [283, 156], [381, 185]], dtype=np.float32)
 
         self.anchors = generate_anchors(self.grid_size, self.input_size, self.anchors_seed)
         self.anchors_per_grid = self.anchors_seed.shape[0]
@@ -52,15 +76,17 @@ class KITTI(BaseDataset):
 
     def load_image(self, index):
         image_id = self.sample_ids[index]
-        image_path = os.path.join(self.data_dir, 'training/image_2', image_id + '.png')
+        image_path = os.path.join(self.data_dir, 'image_2', image_id + '.png')
         image = skimage.io.imread(image_path).astype(np.float32)
-        if np.shape(image)[2] == 4:
-            image = image[:, :, :3]
+        if np.shape(image)[2]==4:
+            image=image[:,:,:3]
+            # print("ok")
+
         return image, image_id
 
     def load_annotations(self, index):
         ann_id = self.sample_ids[index]
-        ann_path = os.path.join(self.data_dir, 'training/label_2', ann_id + '.txt')
+        ann_path = os.path.join(self.data_dir, 'label_2', ann_id + '.txt')
         with open(ann_path, 'r') as fp:
             annotations = fp.readlines()
 
@@ -99,7 +125,7 @@ class KITTI(BaseDataset):
                     score = res['scores'][i]
                     bbox = res['boxes'][i, :]
                     line = '{} -1 -1 0 {:.2f} {:.2f} {:.2f} {:.2f} 0 0 0 0 0 0 0 {:.3f}\n'.format(
-                        class_name, *bbox, score)
+                            class_name, *bbox, score)
                     fp.write(line)
 
     def evaluate(self):
@@ -129,3 +155,4 @@ class KITTI(BaseDataset):
         aps['mAP'] = sum(aps.values()) / len(aps)
 
         return aps
+

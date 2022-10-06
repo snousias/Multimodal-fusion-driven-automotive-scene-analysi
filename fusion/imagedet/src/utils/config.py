@@ -1,5 +1,12 @@
 import argparse
 import os
+import  json
+
+def readConfigurationFile(filepath):
+    config = json.load(open(filepath, ))
+    config = config['squeezedet']
+    return config
+
 
 
 class Config(object):
@@ -99,6 +106,17 @@ class Config(object):
         else:
             cfg = self.parser.parse_args(args)
 
+        # find config.json : diffenent root is defined given directory of execution
+        # for root, dir, files in os.walk('.'):
+        #     if 'config.json' in files:
+        #         configuration_file_path=os.path.join(root, 'config.json')
+        #         configData = json.load(open(configuration_file_path, ))
+        #         configData = configData['multimodalv2']
+
+        configuration_file_path=os.path.join('config.json')
+        configData = json.load(open(configuration_file_path, ))
+        configData = configData['multimodalv2']
+
         cfg.gpus_str = cfg.gpus
         cfg.gpus = [int(gpu) for gpu in cfg.gpus.split(',')]
         cfg.gpus = [i for i in range(len(cfg.gpus))] if cfg.gpus[0] >= 0 else [-1]
@@ -120,8 +138,11 @@ class Config(object):
         print('training chunk_sizes:', cfg.chunk_sizes)
 
         cfg.root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-        cfg.data_dir = os.path.join(cfg.root_dir, 'data')
-        cfg.data_dir ='/home/stavros/Workspace/Object-detection-segmentation/OpenPCDet/data'
+        # cfg.data_dir = os.path.join(cfg.root_dir, 'data')
+        # cfg.data_dir ='/home/stavros/Workspace/Automotive/OpenPCDet/data'
+
+        cfg.data_dir =configData['root']+ configData['path_to_data']
+
         cfg.exp_dir = os.path.join(cfg.root_dir, 'exp')
         cfg.save_dir = os.path.join(cfg.exp_dir, cfg.exp_id)
         cfg.debug_dir = os.path.join(cfg.save_dir, 'debug')

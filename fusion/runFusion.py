@@ -3,7 +3,7 @@ import json
 import sys
 
 # Add OpenPCDet directory to path =======================================================================
-config = json.load(open('cfgs_custom/multimodal/config.json', ))
+config = json.load(open('config.json', ))
 config = config['multimodalv2']
 sys.path.insert(0, config['root'])
 
@@ -216,7 +216,7 @@ def get_iou(bb1, bb2):
 def pipeline():
     # Config & groundtruth =============================================================================================
 
-    config = json.load(open('cfgs_custom/multimodal/config.json', ))
+    config = json.load(open('config.json', ))
     config = config['multimodalv2']
     for i, k in enumerate(config):
         if k not in ['root',
@@ -270,6 +270,9 @@ def pipeline():
     # preprocess image to match model's input resolution
     preprocess_func = dataset.preprocess
     del dataset
+
+
+
     # prepare model & detector
     model = SqueezeDet(cfgimg)
     model = load_model(model, cfgimg.load_model)
@@ -328,8 +331,15 @@ def pipeline():
             data_dict = demo_dataset.collate_batch([data_dict])
 
             # ====================== Input to be read from messages======================================================
-            images_all_outputs = copy.deepcopy(data_dict['image'][0])
-            processed_image = copy.deepcopy(data_dict['image'][0])
+
+
+            if np.shape(data_dict['image'][0])[2]==4:
+                input_image_data= data_dict['image'][0][:,:,:3]
+            else:
+                input_image_data = data_dict['image'][0]
+
+            images_all_outputs = copy.deepcopy(input_image_data)
+            processed_image = copy.deepcopy(input_image_data)
             # Input 3D
             points = copy.deepcopy(data_dict['points'])
             points_with_reflectance = points[:, 1:4]

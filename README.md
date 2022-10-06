@@ -81,12 +81,13 @@ Configuration file:
 }
 ```
 
-Run fusion:
+### Run fusion:
 > cd fusion
 > 
 > python runFusion.py
 
-Evaluate fusion outcomes, compare with image-only and LIDAR-only detection:
+### Evaluate fusion outcomes,
+The script compares fusion with image-only and LIDAR-only detection:
 > cd fusion
 > 
 > python runEvaluate.py

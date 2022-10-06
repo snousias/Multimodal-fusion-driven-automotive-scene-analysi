@@ -16,6 +16,9 @@ output
 version.py
 _suite2/
 .github/
+dataset_generate/
+dataset_prepare/
+imagedet/
 
 # exception to the rule
 data/*

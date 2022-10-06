@@ -4,7 +4,7 @@ import glob
 import json
 from pathlib import Path
 
-config = json.load(open('cfgs_custom/multimodal/config.json', ))
+config = json.load(open('config.json', ))
 config = config['multimodalv2']
 for i, k in enumerate(config):
     if k not in ['root',
