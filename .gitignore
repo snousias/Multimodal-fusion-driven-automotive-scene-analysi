@@ -17,7 +17,7 @@ version.py
 _suite2/
 .github/
 
-dataset_generate/CarlaSimulatorKitti/dataset/*
+dataset_generate/CarlaSimulatorKitti/dataset/training/
 !dataset_generate/CarlaSimulatorKitti/dataset/.gitkeep
 
 imagedet/SqueezeDet-PyTorch/exp/*
