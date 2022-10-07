@@ -1,8 +1,22 @@
 ## CarlaSimulatorKitti
 
-Pygame CARLA Simulator to produce KITTI 2D/3D object detection
+> Pygame CARLA Simulator to produce KITTI 2D/3D object detection for dataset generation to be deployed to OpenPCDet
 
-Source Code : https://github.com/mmmmaomao/DataGenerator
+> Modified for compatibility with OpenPCDet
+
+### Disclaimer
+This repository was initially available at https://github.com/mesakh123/CarlaSimulatorKitti
+
+The code was mofidied for compatibility with OpenPCDet to include planes and folder structure Velodyne 64 LIDAR Properties
+
+**Source Codes**
+```
+https://github.com/mesakh123/CarlaSimulatorKitti 
+https://github.com/mmmmaomao/DataGenerator
+```
+
+### Specifics
+
 
 **Folder Format**
 
@@ -10,9 +24,10 @@ Source Code : https://github.com/mmmmaomao/DataGenerator
 |-- dataset
     |-- training
     |   |-- calib/ # camera and lidar coeff
-    |   |-- image/ # RGB image
-    |   |-- labels/ # KITTI format image information
-    |   |-- velodyne/ # 激光雷达的测量数据
+    |   |-- image_2/ # RGB image
+    |   |-- label_2/ # KITTI format image information
+    |   |-- velodyne/ 
+    |   |-- planes/
     |   |-- train.txt
     |   |-- trainval.txt
     |   |-- val.txt
@@ -49,7 +64,7 @@ Two types of labels:
 
 **Usage**
 
-Carla Version：carla 0.9.12
+Carla Version：carla 0.9.13
 
 Collecting Data
 
@@ -63,52 +78,3 @@ Only show pygame
 python3 inference.py --loop
 ```
 
-Collecting data and show Pygame
-
-```
-python3 inspector.py --loop
-```
-
-To enable predict on local model (put model on models/yolox_s.onnx)
-
-```
-python3 inference.py --loop --predict
-
-or
-
-python3 inspector.py --loop --predict
-
-```
-
-To enable predict (remote API, i.e 'http://<model_host>:<model_port>/predict')
-
-```
-
-python3 inference.py  --loop  --predict --model-host=0.0.0.0 --model-port=7777
-
-```
-
-**CarlaUtils**
-
-SynchronyModel.py，Build client，setup server，generate actors，Generate data from server
-
-data_utils.py， functions of coordinate transform、generate label
-
-data_descriptor.py, KITTI format descripter
-
-DataSave.py， object class to generate and save data folder
-
-export_utils，saving data utils
-
-image_converter.py, image format converter
-
-visual_utils，visualization tools
-
-### On Progress
-
-- [x] Add Pygame
-- [x] Enable to write file while running Pygame
-- [x] Add YOLOX model option , local model or remote model
-- [x] Improve writing file performance
-- [ ] Enable manual control
-- [ ] Others...
