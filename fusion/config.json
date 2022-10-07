@@ -1,7 +1,7 @@
 {
   "multimodalv2": {
     "root": "/home/stavros/Workspace/Automotive/OpenPCDet/",
-    "path_to_data": "data/tracking/0008/",
+    "path_to_data": "data/carla_2022_10_05/training/",
     "path_to_calibration_for_tracking": "calib.txt",
     "path_to_groundtruth_for_tracking": "groundtruth.txt",
     "path_to_image": "image_2/",
@@ -19,8 +19,8 @@
     "nms_fusion_threshold": 0.5,
     "segmentation_model": "",
     "image_detection_model": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
-    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pointpillar.yaml",
-    "lidar_detection_model": "fusion/trained/pointpillar_7728.pth",
+    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pointrcnn.yaml",
+    "lidar_detection_model": "fusion/trained/pointrcnn_7870.pth",
     "start_frame": 0,
     "denoise": 0,
     "meta_data": 0

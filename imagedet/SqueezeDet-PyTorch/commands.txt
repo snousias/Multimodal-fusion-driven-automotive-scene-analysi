@@ -1,0 +1,8 @@
+python main.py --mode train --load_model /home/stavros/Workspace/SqueezeDet-PyTorch/models/imagenet/squeezenet1_1-f364aa15.pth  --exp_id carla_training_adam_v1 --batch_size 16 --lr 0.001 --num_epochs 300
+
+
+python main.py --mode sharing --load_model /home/stavros/Workspace/SqueezeDet-PyTorch/exp/carla_training_adam_v1/model_best.pth  --exp_id carla_sharing_adam_v1 --batch_size 16 --lr 0.001 --num_epochs 3
+
+python main.py --mode eval --load_model /home/stavros/Workspace/SqueezeDet-PyTorch/exp/carla_training_v16/model_300.pth  --exp_id carla_eval_v16 --batch_size 2 --debug 2 --score_thres 0.8
+
+python evaluate.py evaluate --label_path=/home/stavros/Desktop/OpenPCDet/data/carla/training/label_2/ --result_path=/home/stavros/Workspace/SqueezeDet-PyTorch/exp/carla_training_adam_v1/results/data/ --label_split_file=/home/stavros/Desktop/OpenPCDet/data/carla/ImageSets/val.txt --current_class=0 --coco=False

@@ -16,13 +16,19 @@ output
 version.py
 _suite2/
 .github/
-dataset_generate/
-dataset_prepare/
-imagedet/
+
+dataset_generate/CarlaSimulatorKitti/dataset/*
+!dataset_generate/CarlaSimulatorKitti/dataset/.gitkeep
+
+imagedet/SqueezeDet-PyTorch/exp/*
+!imagedet/SqueezeDet-PyTorch/exp/.gitkeep
 
 # exception to the rule
 data/*
 !data/.gitkeep
+
 # exception to the rule
-tools/*
-!tools/.gitkeep
+output/*
+!output/.gitkeep
+# exception to the rule
+

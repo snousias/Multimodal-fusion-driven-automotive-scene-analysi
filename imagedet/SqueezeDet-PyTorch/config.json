@@ -2,8 +2,8 @@
   "squeezedet": {
     "root": "/home/stavros/Workspace/Automotive/OpenPCDet/",
     "data_root": "data/",
-    "path_to_dataset": "carla_2022_09_25/",
-    "load_model_training": "models/imagenet/squeezenet1_1-f364aa15.pth"
+    "path_to_dataset": "carla_2022_10_07/",
+    "load_model_training": "exp/carla_training_2022_10_07/model_best.pth"
   },
   "comment": {
 

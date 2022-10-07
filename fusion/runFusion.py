@@ -262,7 +262,6 @@ def pipeline():
     init_env(cfgimg)
     # prepare configurations
     cfgimg.load_model = config["image_detection_model"]
-    # cfgimg.load_model = '/home/stavros/Workspace/SqueezeDet-PyTorch/exp/carla_test/model_last.pth'
     cfgimg.gpus = [-1]  # -1 to use CPU
     cfgimg.debug = 2  # to visualize detection boxes
     dataset = KITTI('val', cfgimg)
