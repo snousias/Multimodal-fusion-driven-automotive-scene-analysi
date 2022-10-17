@@ -17,12 +17,21 @@ version.py
 _suite2/
 .github/
 
-dataset_generate/CarlaSimulatorKitti/dataset/training/
-dataset_generate/CarlaSimulatorKitti/models/
+# exception to the rule
+dataset_generate/CarlaSimulatorKitti/dataset/*
 !dataset_generate/CarlaSimulatorKitti/dataset/.gitkeep
+
+dataset_generate/CarlaSimulatorKitti/models/*
+!dataset_generate/CarlaSimulatorKitti/models/.gitkeep
 
 imagedet/SqueezeDet-PyTorch/exp/*
 !imagedet/SqueezeDet-PyTorch/exp/.gitkeep
+
+fusion/results/*
+!fusion/results/.gitkeep
+
+fusion/trained/*
+!fusion/trained/.gitkeep
 
 # exception to the rule
 data/*

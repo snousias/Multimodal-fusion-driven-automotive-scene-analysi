@@ -24,7 +24,7 @@ def viz_mayavi(points, vals="distance"):
     mayavi.mlab.show()
 
 
-fnm = '/home/stavros/Workspace/Automotive/OpenPCDet/dataset_generate/CarlaSimulatorKitti/dataset/training/velodyne/000000.bin'
+fnm = '/home/stavros/Workspace/Automotive/OpenPCDet/data/carla_2022_10_07/training/velodyne/000002.bin'
 points = np.fromfile(fnm, dtype=np.float32).reshape((-1, 4)).astype(np.float32)
 print(np.shape(points)[0])
 viz_mayavi(points)

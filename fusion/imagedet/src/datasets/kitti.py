@@ -19,7 +19,7 @@ class KITTI(BaseDataset):
         # self.class_names = ('Car', 'Pedestrian')
         # self.rgb_mean = np.array([63.792778,59.681408, 54.792408], dtype=np.float32).reshape(1, 1, 3)
         # self.rgb_std = np.array([43.899727, 42.48467,  40.198128], dtype=np.float32).reshape(1, 1, 3)
-        # self.data_dir = os.path.join(cfg.data_dir, 'carla')
+        # self.data_dir = os.path.join(cfg.data_dir)
         # self.anchors_seed=np.asarray([[ 21,23],[ 57,  38], [107,  38], [103,  95], [170,  70], [231, 148], [275, 238], [445, 238],
         #     [737, 380]], dtype=np.float32)
 

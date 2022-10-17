@@ -1,7 +1,6 @@
 {
   "multimodalv2": {
     "root": "/home/stavros/Workspace/Automotive/OpenPCDet/",
-    "path_to_data": "data/carla_2022_10_05/training/",
     "path_to_calibration_for_tracking": "calib.txt",
     "path_to_groundtruth_for_tracking": "groundtruth.txt",
     "path_to_image": "image_2/",
@@ -9,18 +8,19 @@
     "path_to_lidar": "velodyne/",
     "path_to_labels": "label_2/",
     "deeplab_root": "",
-    "save_path_root": "fusion/results/dump/",
-    "save_path_came": "fusion/results/dump/image/",
-    "save_path_image_from_lidar": "fusion/results/dump/image_lidar/",
-    "save_path_meta_data": "fusion/results/dump/meta_data/",
-    "save_path_lidar": "fusion/results/dump/lidar/",
+    "save_path_came": "image/",
+    "save_path_image_from_lidar": "image_lidar/",
+    "save_path_meta_data": "meta_data/",
+    "save_path_lidar": "lidar/",
     "cut_off_percentage": 0.5,
     "cut_off_2D": 0.5,
     "nms_fusion_threshold": 0.5,
     "segmentation_model": "",
+    "path_to_data": "data/tracking/0019/",
+    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pointpillar.yaml",
     "image_detection_model": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
-    "lidar_detection_cfg": "fusion/cfgs/kitti_models/pointrcnn.yaml",
-    "lidar_detection_model": "fusion/trained/pointrcnn_7870.pth",
+    "lidar_detection_model": "fusion/trained/pointpillar_7728.pth",
+    "save_path_root": "fusion/results/dump_0019_initial/",
     "start_frame": 0,
     "denoise": 0,
     "meta_data": 0
@@ -28,7 +28,12 @@
   "comment": {
     "image_detection_model": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
     "lidar_detection_cfg": "fusion/cfgs/kitti_models/pointpillar.yaml",
-    "lidar_detection_model": "fusion/trained/pointpillar_7728.pth"
+    "lidar_detection_model": "fusion/trained/pointpillar_7728.pth",
+    "image_detection_model_v2": "squeezedet_carla_epoch_365",
+    "lidar_detection_cfg_v2": "fusion/cfgs_custom/carla_2022_10_07/pointpillar_carla.yaml",
+    "image_detection_model_1": "fusion/imagedet/models/squeezedet_kitti_epoch280.pth",
+    "lidar_detection_cfg_2": "fusion/cfgs_custom/carla_2022_10_07/pointpillar_carla.yaml",
+    "lidar_detection_model_3": "fusion/trained/pointpillar_carla_w_pretrained_300.pth"
   }
 }
 

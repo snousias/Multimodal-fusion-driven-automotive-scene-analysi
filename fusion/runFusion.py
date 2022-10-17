@@ -218,6 +218,12 @@ def pipeline():
 
     config = json.load(open('config.json', ))
     config = config['multimodalv2']
+
+    config['save_path_came'] = config['save_path_root'] + config['save_path_came']
+    config['save_path_image_from_lidar'] = config['save_path_root'] + config['save_path_image_from_lidar']
+    config['save_path_meta_data'] = config['save_path_root'] + config['save_path_meta_data']
+    config['save_path_lidar'] = config['save_path_root'] + config['save_path_lidar']
+
     for i, k in enumerate(config):
         if k not in ['root',
                      'path_to_image',
@@ -269,8 +275,6 @@ def pipeline():
     # preprocess image to match model's input resolution
     preprocess_func = dataset.preprocess
     del dataset
-
-
 
     # prepare model & detector
     model = SqueezeDet(cfgimg)
@@ -331,9 +335,8 @@ def pipeline():
 
             # ====================== Input to be read from messages======================================================
 
-
-            if np.shape(data_dict['image'][0])[2]==4:
-                input_image_data= data_dict['image'][0][:,:,:3]
+            if np.shape(data_dict['image'][0])[2] == 4:
+                input_image_data = data_dict['image'][0][:, :, :3]
             else:
                 input_image_data = data_dict['image'][0]
 

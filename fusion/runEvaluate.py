@@ -6,6 +6,12 @@ from pathlib import Path
 
 config = json.load(open('config.json', ))
 config = config['multimodalv2']
+
+config['save_path_came'] = config['save_path_root'] + config['save_path_came']
+config['save_path_image_from_lidar'] = config['save_path_root'] + config['save_path_image_from_lidar']
+config['save_path_meta_data'] = config['save_path_root'] + config['save_path_meta_data']
+config['save_path_lidar'] = config['save_path_root'] + config['save_path_lidar']
+
 for i, k in enumerate(config):
     if k not in ['root',
                  'path_to_image',
